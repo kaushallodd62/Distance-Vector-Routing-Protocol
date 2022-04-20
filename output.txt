@@ -1,0 +1,290 @@
+
+******** Iteration 0 *********
+
+A => Router Object
+Name: A
+Neighbours: ['B', 'C', 'D']
+Routing Table: {
+    A: 0          via: None
+    B: 8          via: B
+    C: 2          via: C
+    D: 1          via: D
+    E: inf        via: [no path]
+}
+
+B => Router Object
+Name: B
+Neighbours: ['A', 'D', 'E']
+Routing Table: {
+    A: 8          via: A
+    B: 0          via: None
+    C: inf        via: [no path]
+    D: 5          via: D
+    E: 3          via: E
+}
+
+C => Router Object
+Name: C
+Neighbours: ['A']
+Routing Table: {
+    A: 2          via: A
+    B: inf        via: [no path]
+    C: 0          via: None
+    D: inf        via: [no path]
+    E: inf        via: [no path]
+}
+
+D => Router Object
+Name: D
+Neighbours: ['A', 'B']
+Routing Table: {
+    A: 1          via: A
+    B: 5          via: B
+    C: inf        via: [no path]
+    D: 0          via: None
+    E: inf        via: [no path]
+}
+
+E => Router Object
+Name: E
+Neighbours: ['B']
+Routing Table: {
+    A: inf        via: [no path]
+    B: 3          via: B
+    C: inf        via: [no path]
+    D: inf        via: [no path]
+    E: 0          via: None
+}
+
+
+******** Iteration 1 *********
+
+A => Router Object
+Name: A
+Neighbours: ['B', 'C', 'D']
+Routing Table: {
+    A: 0          via: None
+   *B: 6          via: D
+    C: 2          via: C
+    D: 1          via: D
+   *E: 11         via: B
+}
+
+B => Router Object
+Name: B
+Neighbours: ['A', 'D', 'E']
+Routing Table: {
+   *A: 6          via: D
+    B: 0          via: None
+   *C: 10         via: A
+    D: 5          via: D
+    E: 3          via: E
+}
+
+C => Router Object
+Name: C
+Neighbours: ['A']
+Routing Table: {
+    A: 2          via: A
+   *B: 10         via: A
+    C: 0          via: None
+   *D: 3          via: A
+    E: inf        via: [no path]
+}
+
+D => Router Object
+Name: D
+Neighbours: ['A', 'B']
+Routing Table: {
+    A: 1          via: A
+    B: 5          via: B
+   *C: 3          via: A
+    D: 0          via: None
+   *E: 8          via: B
+}
+
+E => Router Object
+Name: E
+Neighbours: ['B']
+Routing Table: {
+   *A: 11         via: B
+    B: 3          via: B
+    C: inf        via: [no path]
+   *D: 8          via: B
+    E: 0          via: None
+}
+
+
+******** Iteration 2 *********
+
+A => Router Object
+Name: A
+Neighbours: ['B', 'C', 'D']
+Routing Table: {
+    A: 0          via: None
+    B: 6          via: D
+    C: 2          via: C
+    D: 1          via: D
+   *E: 9          via: D
+}
+
+B => Router Object
+Name: B
+Neighbours: ['A', 'D', 'E']
+Routing Table: {
+    A: 6          via: D
+    B: 0          via: None
+   *C: 8          via: D
+    D: 5          via: D
+    E: 3          via: E
+}
+
+C => Router Object
+Name: C
+Neighbours: ['A']
+Routing Table: {
+    A: 2          via: A
+   *B: 8          via: A
+    C: 0          via: None
+    D: 3          via: A
+   *E: 13         via: A
+}
+
+D => Router Object
+Name: D
+Neighbours: ['A', 'B']
+Routing Table: {
+    A: 1          via: A
+    B: 5          via: B
+    C: 3          via: A
+    D: 0          via: None
+    E: 8          via: B
+}
+
+E => Router Object
+Name: E
+Neighbours: ['B']
+Routing Table: {
+   *A: 9          via: B
+    B: 3          via: B
+   *C: 13         via: B
+    D: 8          via: B
+    E: 0          via: None
+}
+
+
+******** Iteration 3 *********
+
+A => Router Object
+Name: A
+Neighbours: ['B', 'C', 'D']
+Routing Table: {
+    A: 0          via: None
+    B: 6          via: D
+    C: 2          via: C
+    D: 1          via: D
+    E: 9          via: D
+}
+
+B => Router Object
+Name: B
+Neighbours: ['A', 'D', 'E']
+Routing Table: {
+    A: 6          via: D
+    B: 0          via: None
+    C: 8          via: D
+    D: 5          via: D
+    E: 3          via: E
+}
+
+C => Router Object
+Name: C
+Neighbours: ['A']
+Routing Table: {
+    A: 2          via: A
+    B: 8          via: A
+    C: 0          via: None
+    D: 3          via: A
+   *E: 11         via: A
+}
+
+D => Router Object
+Name: D
+Neighbours: ['A', 'B']
+Routing Table: {
+    A: 1          via: A
+    B: 5          via: B
+    C: 3          via: A
+    D: 0          via: None
+    E: 8          via: B
+}
+
+E => Router Object
+Name: E
+Neighbours: ['B']
+Routing Table: {
+    A: 9          via: B
+    B: 3          via: B
+   *C: 11         via: B
+    D: 8          via: B
+    E: 0          via: None
+}
+
+
+******** Iteration 4 *********
+
+A => Router Object
+Name: A
+Neighbours: ['B', 'C', 'D']
+Routing Table: {
+    A: 0          via: None
+    B: 6          via: D
+    C: 2          via: C
+    D: 1          via: D
+    E: 9          via: D
+}
+
+B => Router Object
+Name: B
+Neighbours: ['A', 'D', 'E']
+Routing Table: {
+    A: 6          via: D
+    B: 0          via: None
+    C: 8          via: D
+    D: 5          via: D
+    E: 3          via: E
+}
+
+C => Router Object
+Name: C
+Neighbours: ['A']
+Routing Table: {
+    A: 2          via: A
+    B: 8          via: A
+    C: 0          via: None
+    D: 3          via: A
+    E: 11         via: A
+}
+
+D => Router Object
+Name: D
+Neighbours: ['A', 'B']
+Routing Table: {
+    A: 1          via: A
+    B: 5          via: B
+    C: 3          via: A
+    D: 0          via: None
+    E: 8          via: B
+}
+
+E => Router Object
+Name: E
+Neighbours: ['B']
+Routing Table: {
+    A: 9          via: B
+    B: 3          via: B
+    C: 11         via: B
+    D: 8          via: B
+    E: 0          via: None
+}
+
